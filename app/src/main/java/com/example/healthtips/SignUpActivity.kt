@@ -24,7 +24,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var editText2 : EditText
     private lateinit var editText3: EditText
     private lateinit var btn_signin : Button
-    private var urlSignIn : String ="http://iamj4rrmobile.000webhostapp.com/sign_in.php"
+    private var urlSignIn : String ="http://iamj4rr.my.id/sign_in.php"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

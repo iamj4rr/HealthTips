@@ -30,8 +30,7 @@ class EditActivity : AppCompatActivity () {
     private lateinit var etUsername : EditText
     private lateinit var etEmail : EditText
     private lateinit var etJK : EditText
-    private var urlSignIn : String ="http://iamj4rrmobile.000webhostapp.com/login_service.php"
-    private var urlUpdate : String ="http://iamj4rrmobile.000webhostapp.com/update_data_table_user.php"
+    private var urlUpdate : String ="http://iamj4rr.my.id/update_data_table_user.php"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -139,7 +138,7 @@ class EditActivity : AppCompatActivity () {
                     urlUpdate,
                     object : Response.Listener<String?> {
                         override fun onResponse(response: String?) {
-                            Toast.makeText(applicationContext, response, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(applicationContext, "Data Berhasil Diubah", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(applicationContext, MainActivity::class.java))
                         }
                     },

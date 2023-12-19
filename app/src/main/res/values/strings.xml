@@ -33,7 +33,7 @@
     <string name="save">Save</string>
     <string name="informasi">Kami menemukan berbagai artikel, dan memilahnya sesuai dengan data yang anda berikan.</string>
     <string name="bermanfaat">Semoga Bermanfaat!</string>
-    <string name="berdasarkan_imt">Berdasarkan IMT</string>
+    <string name="berdasarkan_imt">Berdasarkan IMT </string>
     <string name="source">Source</string>
     <string name="jumlah_tidur">Berdasarkan Jumlah Jam Tidur</string>
     <string name="tingkat_aktivitas">Berdasarkan Tingkat Aktivitas</string>

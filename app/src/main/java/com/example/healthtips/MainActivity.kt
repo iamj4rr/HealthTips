@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var myButton2 : LinearLayout
     private lateinit var myButton3 : LinearLayout
 
-    private var urlSignIn : String ="http://iamj4rrmobile.000webhostapp.com/get_data_table_user.php"
+    private var urlSignIn : String ="http://iamj4rr.my.id/get_data_tabel_user.php"
 
 
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                     try {
                         val editText : TextView = findViewById(R.id.user_nama)
                         val jsonObject = JSONObject(response)
-                        val nama_user = jsonObject.getString("nama")
+                        val nama_user = jsonObject.getString("username")
                         editText.text = nama_user
                     }catch (e : JSONException) {
                         e.printStackTrace();
