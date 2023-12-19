@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1e1e">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/name_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingStart="15dp"
+        android:text="@string/edit_your_data"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="288dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/nama"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_user" />
+
+    <EditText
+        android:id="@+id/namaEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+    <TextView
+        android:id="@+id/umur"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="288dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/umur"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditText" />
+
+    <EditText
+        android:id="@+id/umurEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umur" />
+
+    <TextView
+        android:id="@+id/berat"
+        android:layout_width="145dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="253dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/berat"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umurEditText" />
+
+    <EditText
+        android:id="@+id/beratEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/berat" />
+
+    <TextView
+        android:id="@+id/tinggi"
+        android:layout_width="145dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="253dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/tinggi"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beratEditText" />
+
+    <EditText
+        android:id="@+id/tinggiEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinggi" />
+
+    <TextView
+        android:id="@+id/tingkat"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="171dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/fisik"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinggiEditText" />
+
+    <EditText
+        android:id="@+id/tingkatEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tingkat" />
+
+    <TextView
+        android:id="@+id/jumlah"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="171dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/jumlah"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tingkatEditText" />
+
+    <EditText
+        android:id="@+id/jumlahEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jumlah" />
+
+    <TextView
+        android:id="@+id/save_data"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:onClick="navigateToNextLayout"
+        android:text="@string/save"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

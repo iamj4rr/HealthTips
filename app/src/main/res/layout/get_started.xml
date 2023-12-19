@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".GetStartedActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/healthy"
+        app:layout_constraintEnd_toStartOf="@+id/health"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/health"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="53dp"
+        android:fontFamily="@font/poppins_bold"
+
+        android:text="@string/health"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/tips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="127dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="top"
+        android:text="@string/tips"
+        android:textColor="#ECDAC5"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/healthy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/health" />
+
+    <ImageView
+        android:id="@+id/healthy"
+        android:layout_width="215dp"
+        android:layout_height="215dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/healthy"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/make_your_l"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tips"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/make_your_l"
+        android:layout_width="390dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poor_story"
+        android:gravity="center_horizontal|top"
+        android:text="@string/make_your_l"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetStarted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthy" />
+
+    <Button
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="81dp"
+        android:backgroundTint="#ECDAC5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Get Started"
+        android:textColor="#2D384B"
+        android:textSize="20sp"
+        android:onClick="navigateToNextLayout"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_your_l" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

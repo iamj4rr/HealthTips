@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1e1e">
+
+    <ImageView
+        android:id="@+id/photo_profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toStartOf="@+id/logout"
+        app:layout_constraintStart_toEndOf="@+id/whiteback"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/username"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditTextUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:onClick="navigateToNextLayout"
+        android:text="@string/logout"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameEditTextUsername"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="284dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/email"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditTextUsername" />
+
+    <EditText
+        android:id="@+id/emailEditText3"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/jk"
+        android:layout_width="113dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="241dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/jk"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText3" />
+
+    <EditText
+        android:id="@+id/jkEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jk" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        android:backgroundTint="#ECDAC5"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="navigateToNextLayout"
+        android:text="Done!!"
+        android:textColor="#2D384B"
+        android:textSize="20sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jkEditText" />
+
+    <Button
+        android:id="@+id/edit_your_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="73dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="left"
+        android:onClick="navigateToNextLayout"
+        android:text="Edit Your Data"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save" />
+
+    <ImageView
+        android:id="@+id/whiteback"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="198dp"
+        android:onClick="navigateToNextLayout"
+        android:src="@drawable/backwhite"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
