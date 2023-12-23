@@ -165,7 +165,7 @@
 
     <Button
         android:id="@+id/signUp"
-        android:layout_width="104dp"
+        android:layout_width="112dp"
         android:layout_height="42dp"
         android:layout_marginStart="153dp"
         android:layout_marginEnd="154dp"
@@ -173,7 +173,7 @@
         android:fontFamily="@font/dmsans_regular"
         android:gravity="left"
         android:onClick="navigateToNextLayout"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
